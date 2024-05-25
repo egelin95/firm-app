@@ -55,3 +55,11 @@ dotnet ef database update
 ```
 
 if all goes well, your local database `FirmDb` will have a table called EFMigrationsHistory. 
+
+## Add new models and generate migrations
+
+As an example, let's start by creating a model definition for Hint table. We create a class file `Hint.cs` in `Models` directory and add the following
+
+```cs
+
+```
