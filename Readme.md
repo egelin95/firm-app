@@ -125,3 +125,15 @@ Add all models and their relations.
 
 ### Define all the models in FirmDBContext
 This step will help us generate migrations. Once we add all the new tables as `DbSet` methods, then the new migration will pick these and create new tables in the script. 
+
+### Create a new migration
+Once we have added all the models and defined methods in `FirmDbContext`; we can generate a final migration to create all the tables in our db. 
+
+```bash
+dotnet ef migrations add AllFirmModels
+```
+
+This will generate a new migration containing all the new tables and relationships. 
+
+### Apply the migration
+We can test these migration by applying it to our database and see if all the tables are created successfully. We can also check the relationships in SQL Management Studio by generating an ERD automatically. 
