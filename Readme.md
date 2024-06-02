@@ -137,3 +137,5 @@ This will generate a new migration containing all the new tables and relationshi
 
 ### Apply the migration
 We can test these migration by applying it to our database and see if all the tables are created successfully. We can also check the relationships in SQL Management Studio by generating an ERD automatically. 
+
+![erd](./screenshots/erd.png)
